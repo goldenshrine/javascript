@@ -115,24 +115,24 @@ const array = [2, 3, 43, -6789, 34, 12, 2, 1, 21];
 
 // console.log("highest", highestt);
 
-function highestNumber(res, curr) {
-  if (curr > res) {
-    res = curr;
-  }
-  return res;
-}
+// function highestNumber(res, curr) {
+//   if (curr > res) {
+//     res = curr;
+//   }
+//   return res;
+// }
 
-const high = array.reduce(highestNumber, -Infinity);
+// const high = array.reduce(highestNumber, -Infinity);
 
-console.log(high);
+// console.log(high);
 
-function lowestNumber(res, curr) {
-  if (curr < res) {
-    res = curr;
-  }
-  return res;
-}
+// function lowestNumber(res, curr) {
+//   if (curr < res) {
+//     res = curr;
+//   }
+//   return res;
+// }
 
-const lowestt = array.reduce(lowestNumber);
+// const lowestt = array.reduce(lowestNumber);
 
-console.log(lowestt);
+// console.log(lowestt);
