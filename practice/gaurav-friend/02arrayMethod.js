@@ -7,25 +7,25 @@
 // console.log("double values",doubleValues.toString(values)); // .toString(values) was unnecessary
 
 // Q2 👉 get values > 20 (filter)
-let values02 = [10, 25, 30, 5];
+// let values02 = [10, 25, 30, 5];
 
-let above20 = values02.filter((x) => x > 20);
+// let above20 = values02.filter((x) => x > 20);
 
-console.log("values > 20", above20);
+// console.log("values > 20", above20);
 
 //Q3 👉 find total (reduce)
-let nums = [5, 10, 15];
+// let nums = [5, 10, 15];
 
-let sum = nums.reduce((res, curr) => res + curr, 0);
+// let sum = nums.reduce((res, curr) => res + curr, 0);
 
-console.log(sum);
+// console.log(sum);
 
 // Q4 ⭐⭐ (Important React level) 👉 get names of users age > 18
-let users = [
-  { name: "Prince", age: 23 },
-  { name: "Amit", age: 17 },
-  { name: "Rahul", age: 25 },
-];
+// let users = [
+//   { name: "Prince", age: 23 },
+//   { name: "Amit", age: 17 },
+//   { name: "Rahul", age: 25 },
+// ];
 
 // let names = users.reduce((acc, curr) => {
 //   if (curr.age > 18) {
@@ -38,6 +38,38 @@ let users = [
 
 // Q4 ⭐⭐ industry standard:-
 
-let names = users.filter((x) => x.age > 18).map((x) => x.name); // .age bhool gya tha
+// let names = users.filter((x) => x.age > 18).map((x) => x.name); // .age bhool gya tha
 
-console.log(names);
+// console.log(names);
+
+//Q5 ⭐ show these values as output {1:1, 2:4, 3:9, 4:16}
+let nums2 = [1, 2, 3, 4];
+
+let output5 = nums2.reduce((acc, curr) => {
+  acc[curr] = curr * curr;
+  // hey cgpt explain what acc[curr] is doing didnt get it properly
+
+  return acc;
+}, {});
+// hey chatgpt why cant i do these kind of questions which requares dynamic approach without hint or in one go, i dont know if im suppose to this without any hint for a while i got blank,Be real!!.
+console.log(output5);
+
+//Q6 ⭐ show these values as output {23: 2, 25: 1}
+
+let users = [
+  { name: "Prince", age: 23 },
+  { name: "Amit", age: 23 },
+  { name: "Rahul", age: 25 },
+];
+
+let output6 = users.reduce((acc, curr) => {
+  if (acc[curr.age]) {
+    acc[curr.age] += 1;
+  } else {
+    acc[curr.age] = 1;
+  }
+  return acc;
+  // explain each and every step properly almost dont get it at all
+}, {});
+
+console.log(output6);
