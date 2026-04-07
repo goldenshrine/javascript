@@ -8,9 +8,9 @@ let isStudent = true;
 //Q2 create an array
 let city = ["delhi", "mumbai", "pune"];
 
-console.log(city[0]);
+console.log(city[0]); //first el
 
-console.log(city[city.length - 1]);
+console.log(city[city.length - 1]); //last el
 
 //mid value of the array
 
