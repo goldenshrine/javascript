@@ -4,7 +4,7 @@
 
 // let doubleValues = values01.map((x) => x * 2);
 
-// console.log("double values",doubleValues.toString(values)); // .toString(values) was unnecessary
+// console.log("double values",doubleValues.toString(values)); // .toString(values) was unnecessary but i used it because i wanted result to be in string format not array
 
 // Q2 👉 get values > 20 (filter)
 // let values02 = [10, 25, 30, 5];
@@ -45,13 +45,13 @@
 //Q5 ⭐ show these values as output {1:1, 2:4, 3:9, 4:16}
 let nums2 = [1, 2, 3, 4];
 
-let output5 = nums2.reduce((acc, curr) => {
-  acc[curr] = curr * curr;
-  // hey cgpt explain what acc[curr] is doing didnt get it properly
+let output5 = nums2.reduce((res, curr) => {
+  res[curr] = curr * curr;
+  // explain what acc[curr] is doing didnt get it properly
 
-  return acc;
+  return res;
 }, {});
-// hey chatgpt why cant i do these kind of questions which requares dynamic approach without hint or in one go, i dont know if im suppose to this without any hint for a while i got blank,Be real!!.
+// why cant i do these kind of questions which requares dynamic approach without hint or in one go, i dont know if im suppose to this without any hint for a while i got blank.
 console.log(output5);
 
 //Q6 ⭐ show these values as output {23: 2, 25: 1}

@@ -28,14 +28,32 @@
 
 //Q5 ⭐👉 using reduce → return [2,4,6,8]
 
-// let nums = [1, 2, 3, 4];
+let nums = [1, 2, 3, 4];
 
 // let newNums = nums.reduce((res, curr) => {
 //   res.push(curr * 2);
 //   return res;
 // }, []);
 
-// console.log(newNums);
+// for-each loop
+
+values = [];
+
+nums.forEach((element) => {
+  values.push(element * 2);
+});
+
+console.log(values);
+// let newNums = (num) => {
+//   values = [];
+//   num.forEach((element) => {
+//     values.push(element * 2);
+//   });
+//   return values;
+// };
+
+// console.log("newNums", newNums(nums));
+
 // okay this is the solution now, i understood and get it but
 
 // let newNums = nums.reduce((res, curr) => {

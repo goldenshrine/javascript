@@ -56,7 +56,7 @@ console.log(newArray);
 //Q6 👉 Print: 2nd element, 2nd last element ,middle element
 
 let arr = [10, 20, 30, 40, 50];
-let midArr = Math.floor(arr.length / 2); // use midIndex instead of midArr to avoid confsion
+let midArrIdx = Math.floor(arr.length / 2); // use midIndex instead of midArr to avoid confsion
 
 //mid arr with func
 //hey cgpt, I always get confuse while passing params in function like -->(arr)and also while calling the function:refrence-->console.log("Q6, middle element with function", middleArr(arr));, here like what to pass and why exactly we pass it
@@ -72,7 +72,7 @@ function middleArr(array) {
 
 console.log("Q6, 2nd element", arr[1]); //2nd element
 console.log("Q6, 2nd last element", arr[arr.length - 2]); //2nd last element
-console.log("Q6, middle element", arr[midArr]); // middle element, hey cgpt if array is of even numbers then there is none mid el !?, i have taken a even array, it was printing upper limit el.
+console.log("Q6, middle element", arr[midArrIdx]); // middle element, hey cgpt if array is of even numbers then there is none mid el !?, i have taken a even array, it was printing upper limit el.
 console.log("Q6, middle element with function", middleArr(arr)); // CORRECTION: Prince! Use () to call the function and pass 'arr' as an argument
 
 // Q7 create an Object(student) with: name, marks, subjects(array) 👉 Print: 2nd subject
