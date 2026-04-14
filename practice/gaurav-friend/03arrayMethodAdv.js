@@ -54,23 +54,14 @@ console.log(values);
 
 // console.log("newNums", newNums(nums));
 
-// okay this is the solution now, i understood and get it but
-
-// let newNums = nums.reduce((res, curr) => {
-//  res[];
-//   }, []);
-
 //Q6 👉 Using reduce → return product of all numbers
 
-// let nums2 = [1, 2, 3, 4];
+let nums2 = [1, 2, 3, 4];
 
-// let product = nums2.reduce((res, curr) => {
-//   res = res * curr;
-//   return res;
-// }, 1);
+let product = nums2.reduce((res, curr) => res * curr, 1);
 
 // // done only with referance not by self
-// console.log(product);
+console.log(product);
 
 //Q7 👉 Using reduce → return only even numbers array
 let nums3 = [1, 2, 3, 4, 5];
