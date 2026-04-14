@@ -7,8 +7,8 @@ function meet(callback) {
   callback();
 }
 
-greet(meet); //erlier tried this, why this not worked
-meet(greet); // why this works
+meet(greet); //works properly
+// greet(meet); //INVALID only greet will work not meet because callback defined in meet
 
 // function greet(callback) {
 //   console.log("hello");
