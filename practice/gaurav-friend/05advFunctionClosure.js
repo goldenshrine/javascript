@@ -46,7 +46,7 @@ sayHi();
 //   function inner() {
 //     count++;
 //     console.log(count);
-//   }
+//   6}
 //   return inner;
 // }
 
@@ -67,5 +67,3 @@ function MultiplyBy(x) {
 let double = MultiplyBy(2);
 console.log(double(3));
 console.log(double(6));
-
-// heinn yeh kaise hogya
